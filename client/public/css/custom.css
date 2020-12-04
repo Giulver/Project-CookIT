@@ -1,0 +1,43 @@
+/* Global 
+
+.vheight-100 {
+    min-height: 100vh;
+}
+
+.below-nav {
+    padding-top: 5rem;
+}
+
+/* Navbar *
+.navbar-nav {
+    cursor: pointer;
+}
+
+/* Filters *
+.list-group-item {
+    background-color: transparent;
+}
+
+.list-group-item.active {
+    background-color: #0d47a1 !important;  
+    border-color: #0e046e !important;
+}
+
+.list-group-item-action:hover {
+    background-color: #5bc0de;
+}
+
+.list-group-item-action:focus {
+    background-color: transparent;
+    outline: none;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:focus:invalid {
+    box-shadow: none;
+}
+
+*/
