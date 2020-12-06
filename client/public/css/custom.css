@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 /* Global 
 
 .vheight-100 {
@@ -41,3 +43,10 @@ input:focus:invalid {
 }
 
 */
+
+
+.font_text
+{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
