@@ -2,10 +2,26 @@ import React from 'react';
 import './App.css';
 
 import NavBar from './Components/NavBar';
+import RecipesList from './Components/RecipesList';
+
+import {Row, Container} from 'react-bootstrap';
 
 
 // Import react-router-dom
 import { BrowserRouter as Router, Route, Switch, Redirect, } from 'react-router-dom';
+
+var recipes = [
+  {"name": "Pasta alla carbonara",
+  "cover": "Pecorino.jpg"},
+  {"name": "Pasta alla carbonara",
+  "cover": "Pecorino.jpg"},
+  {"name": "Pasta alla carbonara",
+  "cover": "Pecorino.jpg"},
+  {"name": "Pasta alla carbonara",
+  "cover": "Pecorino.jpg"},
+  {"name": "Pasta alla carbonara",
+  "cover": "Pecorino.jpg"},
+]
 
 
 class App extends React.Component {
@@ -42,6 +58,7 @@ class App extends React.Component {
         return (
             <>
             <Router>
+            <Container fluid>
             {/* <Container style={{backgroundImage: 'url(/svg/background.svg)'}} fluid> */}
 
 
@@ -49,7 +66,28 @@ class App extends React.Component {
 
               <Route path="/" render={(props) => {
                 return (
+                  <>
                     <NavBar location={this.state.location} setLocation={this.setLocation}/>
+                    <div className="margin_top">
+                    <Row className="mx-auto">
+                      <h2 className="font_text">Last Recipes</h2>
+                      <i className="far fa-clock ml-2" width = "30" heigth = "30"></i>
+                    </Row>
+                    <RecipesList recipes = {recipes} destination = "/last_recipes"/>
+                    {}
+                    <Row className="mx-auto mt-4">
+                      <h2 className="font_text">Favorite Recipes</h2>
+                      <i className="fas fa-heart ml-2" width = "30" heigth = "30"></i>
+                    </Row>
+                    <RecipesList recipes = {recipes} destination = "/favorite_recipes"/>
+                    {}
+                    <Row className="mx-auto mt-4">
+                      <h2 className="font_text">Last Ingredients</h2>
+                      <i className="far fa-clock ml-2" width = "30" heigth = "30"></i>
+                    </Row>
+                    <RecipesList recipes = {recipes} destination = "/last_ingredients"/>
+                    </div>
+                  </>
                 );
               }} />
 
@@ -57,7 +95,7 @@ class App extends React.Component {
               </Route>
 
 
-              <Route path="/last_recipe"> </Route>
+              <Route path="/last_recipes"> </Route>
 
               <Route path="/favorite_recipes"> </Route>
 
@@ -65,7 +103,7 @@ class App extends React.Component {
 
             </Switch>
 
-          {/* </Container> */}
+          </Container>
         </Router>
       </>
         );

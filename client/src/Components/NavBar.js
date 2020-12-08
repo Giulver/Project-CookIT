@@ -23,11 +23,11 @@ class NavBar extends React.Component {
             <div className="container-fluid">
                 <Navbar bg="white" variant="white" expand="sm" fixed="top" className="row d-flex justify-content-between">
 
-                    {this.props.location === 'house' 
+                    {this.props.location === 'home' 
                     ? 
                     <>
                         <Navbar.Brand href="/" className="ml-2">
-                            <Image src="logo.jpg" width={100}/> 
+                            <Image src="Logo.jpg" width={100}/> 
                         </Navbar.Brand>
                         <Nav>
                             <i className="fas fa-user mr-2" style={{ fontSize: 40, color: '#f3a42d' }} />

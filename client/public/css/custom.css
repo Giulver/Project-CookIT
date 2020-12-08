@@ -50,3 +50,8 @@ input:focus:invalid {
     font-family: 'Poppins', sans-serif;
     color: black;
 }
+
+.margin_top
+{
+    margin-top: 5rem;
+}
