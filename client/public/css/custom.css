@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue');
 
 /* Global 
 
@@ -47,8 +47,17 @@ input:focus:invalid {
 
 .font_text
 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     color: black;
+}
+
+.caption_recipes
+{
+    margin-top: 5.8rem;
+    margin: 6.8rem -15%;
+    font-size: medium;
+    font-style: bold;
+    width: 18rem;
 }
 
 .margin_top
