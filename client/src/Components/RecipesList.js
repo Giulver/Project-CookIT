@@ -1,14 +1,12 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
+import Carousel from 'react-bootstrap/Carousel';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+
+import { Link } from 'react-router-dom';
+
 import RecipeElement from './RecipeElement.js'
-import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
-
-import { Navbar, Nav, NavDropdown, Row, CardGroup, Col } from 'react-bootstrap';
-
-import { Link, Redirect } from 'react-router-dom';
-
 
 class RecipesList extends React.Component {
 

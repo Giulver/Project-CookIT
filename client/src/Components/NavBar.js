@@ -1,11 +1,8 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
+
 import Image from 'react-bootstrap/Image';
-
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-
-import { Link, Redirect } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 
 class NavBar extends React.Component {
@@ -27,7 +24,7 @@ class NavBar extends React.Component {
                     ? 
                     <>
                         <Navbar.Brand href="/" className="ml-2">
-                            <Image src="Logo.jpg" width={100}/> 
+                            <Image src="icons/logo.jpg" width={100}/> 
                         </Navbar.Brand>
                         <Nav>
                             <i className="fas fa-user mr-2" style={{ fontSize: 40, color: '#f3a42d' }} />

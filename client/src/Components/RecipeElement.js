@@ -1,11 +1,8 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
 
-import { Link, Redirect } from 'react-router-dom';
-import {Row, Card} from 'react-bootstrap';
-//import Recipe from '../api/Recipe';
+import { Link } from 'react-router-dom';
+import {Card} from 'react-bootstrap';
+import Recipe from '../Api/Recipe';
 
 
 class RecipeElement extends React.Component {

@@ -1,19 +1,9 @@
 import React from 'react';
-import Badge from 'react-bootstrap/Badge';
 
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Figure from 'react-bootstrap/Figure';
+import Badge from 'react-bootstrap/Badge';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-
-import { Link, Redirect } from 'react-router-dom';
 
 
 class InsertionBar extends React.Component {
@@ -32,9 +22,9 @@ class InsertionBar extends React.Component {
                     <Form className="my-1">
                         <Form.Row className="justify-content-between mx-1">
                             <FormControl style={{borderRadius: '15px', width: '60%'}} type="text" placeholder="Insert your ingredient"/>
-                                <Image src="mic_icon.svg" className="mx-auto my-1" width={30}/>
-                                <Image src="camera_icon.svg" className="mx-auto my-1" width={30}/>
-                                <Image src="camera_icon.svg" className="mx-auto my-1" width={30}/>
+                                <Image src="icons/mic_icon.svg" className="mx-auto my-1" width={30}/>
+                                <Image src="icons/camera_icon.svg" className="mx-auto my-1" width={30}/>
+                                <Image src="icons/food_icon.png" className="mx-auto my-1" width={30}/>
                         </Form.Row>
                     </Form>
                 </Badge>
