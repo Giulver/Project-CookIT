@@ -28,15 +28,13 @@ class InsertionBar extends React.Component {
 
     render() {
         return (
-                <Badge pill className="insertion_style">
+                <Badge pill className="insertion_style mt-1">
                     <Form className="my-1">
-                        <Form.Row>
-                            <Col xs={8}><FormControl className="ml-1" style={{borderRadius: '15px', width: '100%'}} type="text" placeholder="Insert your ingredient"/></Col>
-                            <Col xs={4} className="container">
-                                <Image src="mic_icon.svg" className="mr-2 mt-1" width={30}/>
-                                <Image src="camera_icon.svg" className="mr-2 mt-1" width={30}/>
-                                <Image src="camera_icon.svg" className="mr-2 mt-1" width={30}/>
-                            </Col>
+                        <Form.Row className="justify-content-between mx-1">
+                            <FormControl style={{borderRadius: '15px', width: '60%'}} type="text" placeholder="Insert your ingredient"/>
+                                <Image src="mic_icon.svg" className="mx-auto my-1" width={30}/>
+                                <Image src="camera_icon.svg" className="mx-auto my-1" width={30}/>
+                                <Image src="camera_icon.svg" className="mx-auto my-1" width={30}/>
                         </Form.Row>
                     </Form>
                 </Badge>

@@ -62,12 +62,6 @@ input:focus:invalid {
 .insertion_style
 {
     background-color: #f3a42d;
-    margin-top: 25%;
     width: 100%;
     border-radius: 15px;
 }
-
-.container {
-
-    justify-content: flex-end;
-  }

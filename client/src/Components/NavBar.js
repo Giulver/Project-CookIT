@@ -21,7 +21,7 @@ class NavBar extends React.Component {
     render() {
         return (
             <div className="container-fluid">
-                <Navbar bg="white" variant="white" expand="sm" fixed="top" className="row d-flex justify-content-between">
+                <Navbar bg="white" variant="white" expand="sm" className="row d-flex justify-content-between">
 
                     {this.props.location === 'home' 
                     ? 
