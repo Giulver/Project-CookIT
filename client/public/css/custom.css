@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Helvetica+Neue');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 /* Global 
 
@@ -47,20 +47,27 @@ input:focus:invalid {
 
 .font_text
 {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: black;
 }
 
 .caption_recipes
 {
-    margin-top: 5.8rem;
-    margin: 6.8rem -15%;
-    font-size: medium;
+    /*margin-top: 85%;*/
+    margin: 85% -10%;
+    font-size: 100%;
     font-style: bold;
-    width: 18rem;
 }
 
-.margin_top
+.insertion_style
 {
-    margin-top: 5rem;
+    background-color: #f3a42d;
+    margin-top: 25%;
+    width: 100%;
+    border-radius: 15px;
 }
+
+.container {
+
+    justify-content: flex-end;
+  }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+import InsertionBar from './Components/InsertionBar';
 import NavBar from './Components/NavBar';
 import RecipesList from './Components/RecipesList';
 
@@ -12,13 +13,13 @@ import { BrowserRouter as Router, Route, Switch, Redirect, } from 'react-router-
 
 var recipes = [
   {"name": "Pasta alla carbonara",
-  "cover": "Pecorino.jpg"},
+  "cover": "Salame.jpg"},
   {"name": "Pasta alla carbonara",
-  "cover": "Pecorino.jpg"},
+  "cover": "Mortadella.jpg"},
   {"name": "Pasta alla carbonara",
-  "cover": "Pecorino.jpg"},
+  "cover": "Anguria.jpg"},
   {"name": "Pasta alla carbonara",
-  "cover": "Pecorino.jpg"},
+  "cover": "Salame.jpg"},
   {"name": "Pasta alla carbonara",
   "cover": "Pecorino.jpg"},
 ]
@@ -68,21 +69,22 @@ class App extends React.Component {
                 return (
                   <>
                     <NavBar location={this.state.location} setLocation={this.setLocation}/>
-                    <div className="margin_top">
+                    <InsertionBar></InsertionBar>
+                    <div className="mt-3">
                     <Row className="mx-auto">
-                      <h2 className="font_text">Last Recipes</h2>
+                      <h3 className="font_text">Last Recipes</h3>
                       <i className="far fa-clock ml-2" width = "30" heigth = "30"></i>
                     </Row>
                     <RecipesList recipes = {recipes} destination = "/last_recipes"/>
                     {}
                     <Row className="mx-auto mt-4">
-                      <h2 className="font_text">Favorite Recipes</h2>
+                      <h3 className="font_text">Favorite Recipes</h3>
                       <i className="fas fa-heart ml-2" width = "30" heigth = "30"></i>
                     </Row>
                     <RecipesList recipes = {recipes} destination = "/favorite_recipes"/>
                     {}
                     <Row className="mx-auto mt-4">
-                      <h2 className="font_text">Last Ingredients</h2>
+                      <h3 className="font_text">Last Ingredients</h3>
                       <i className="far fa-clock ml-2" width = "30" heigth = "30"></i>
                     </Row>
                     <RecipesList recipes = {recipes} destination = "/last_ingredients"/>
