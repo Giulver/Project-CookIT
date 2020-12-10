@@ -23,11 +23,11 @@ class NavBar extends React.Component {
                     {this.props.location === 'home' 
                     ? 
                     <>
-                        <Navbar.Brand href="/" className="ml-2">
+                        <Navbar.Brand href="/" >
                             <Image src="icons/logo.jpg" width={100}/> 
                         </Navbar.Brand>
                         <Nav>
-                            <i className="fas fa-user mr-2" style={{ fontSize: 40, color: '#f3a42d' }} />
+                            <i className="fas fa-user" style={{ fontSize: 40, color: '#f3a42d' }} />
                         </Nav>
                     </>
                     : 

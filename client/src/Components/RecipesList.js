@@ -19,7 +19,7 @@ class RecipesList extends React.Component {
 
     render() {
         return (
-            <Carousel >
+            <Carousel controls={false}>
                     <Carousel.Item interval={10000}>
                         <Row>
                         <Col xs={6}><RecipeElement recipe = {this.props.recipes[0]}/></Col>

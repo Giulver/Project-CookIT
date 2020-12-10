@@ -51,12 +51,25 @@ input:focus:invalid {
     color: black;
 }
 
+
+.recipe_small_overlay
+{
+    padding: 0%;
+}
+
 .caption_recipes
 {
-    /*margin-top: 85%;*/
-    margin: 85% -10%;
-    font-size: 100%;
-    font-style: bold;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 80%;
+    width: 100%;
+}
+
+.bg_caption_recipes
+{
+    margin-top: 80%;
+    height: 20%;
+    background-color: hsla(0, 0%, 43%, 0.3);
 }
 
 .insertion_style

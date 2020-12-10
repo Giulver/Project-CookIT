@@ -18,8 +18,12 @@ class RecipeElement extends React.Component {
                 <Card>
                     <Link>
                      <Card.Img src={this.props.recipe.cover} alt="Card image" />
-                    <Card.ImgOverlay>
-                        <Card.Title className="caption_recipes font_text">{this.props.recipe.name}</Card.Title>
+                    <Card.ImgOverlay className="recipe_small_overlay">
+                        <Card.Title className="bg_caption_recipes">
+                            <div className="caption_recipes font_text">
+                            {this.props.recipe.name}
+                            </div>
+                        </Card.Title>
                     </Card.ImgOverlay>
                     </Link>
                 </Card>
